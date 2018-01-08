@@ -26,5 +26,5 @@
 
 <ion-footer>
   <button (click)="addNotification()" ion-button color="primary" full>Schedule</button>
-  <button (click)="cancelAll()" ion-button color="danger" full>Leave me alone!</button>
+  <button (click)="cancelAll()" ion-button color="danger" full disabled="{{ isScheduled ? '' : 'disabled' }}">Leave me alone!</button>
 </ion-footer>
